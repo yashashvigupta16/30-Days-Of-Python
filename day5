@@ -1,0 +1,23 @@
+# Day 5: Lists – Handling an AI Model Dataset
+# In machine learning, lists are commonly used to store and evaluate model performance metrics.
+
+# 1. Creating a List (A collection of accuracy scores)
+model_accuracies = [0.85, 0.92, 0.78, 0.95, 0.88]
+
+# 2. Adding new data (A newly trained model is added)
+model_accuracies.append(0.91)
+
+# 3. Updating data (Correcting an incorrectly recorded score)
+model_accuracies[2] = 0.80  # Updating 0.78 to 0.80
+
+# 4. Using List Methods for Evaluation
+model_accuracies.sort(reverse=True)  # Arrange scores from highest to lowest
+best_score = model_accuracies[0]
+worst_score = model_accuracies[-1]
+
+# 5. Selecting the Top 3 Performing Models
+top_3_models = model_accuracies[:3]
+
+print(f"Complete Dataset: {model_accuracies}")
+print(f"Best Performing Model: {best_score}")
+print(f"Top 3 Models Ready for Deployment: {top_3_models}")
