@@ -1,0 +1,18 @@
+# Day 7: Sets – Removing Duplicates in ML Data
+# Sets store unordered collections where each element is unique.
+
+# 1. Simulating an unclean list of dataset labels
+raw_labels = ["Cat", "Dog", "Dog", "Bird", "Cat", "Cat", "Fish", "Dog"]
+
+# 2. Converting to a Set to extract unique classes
+unique_classes = set(raw_labels)
+
+# 3. Adding a new category
+unique_classes.add("Horse")
+
+# 4. Verifying the presence of a specific class
+has_rabbit = "Rabbit" in unique_classes
+
+print(f"Total Labels (with duplicates): {len(raw_labels)}")
+print(f"Unique Classes Found: {unique_classes}")
+print(f"Is 'Rabbit' present in dataset? {has_rabbit}")
