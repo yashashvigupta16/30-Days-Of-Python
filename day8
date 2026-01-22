@@ -1,0 +1,26 @@
+# Day 8: Dictionaries – Organizing AI Model Parameters
+# Dictionaries help store structured information using key–value pairs.
+
+# 1. Creating an AI Model Configuration
+model_metadata = {
+    "model_name": "VisionTransformer_v1",
+    "accuracy": 0.89,
+    "is_stable": True,
+    "epochs": 50,
+    "architecture": ["Input", "Hidden_Layer", "Output"]
+}
+
+# 2. Accessing and Updating Values
+# Fetching accuracy safely using .get()
+current_acc = model_metadata.get("accuracy")
+
+# Updating values after additional training
+model_metadata["accuracy"] = 0.92
+model_metadata["epochs"] += 10
+
+# 3. Adding extra metadata (Environment tag)
+model_metadata["environment"] = "Production"
+
+# 4. Displaying details for monitoring
+print(f"Tracking Model: {model_metadata['model_name']}")
+print(f"Current Stats: {model_metadata}")
