@@ -9,8 +9,13 @@ My objective is to build a strong foundation in Python to transition into Data A
 | Day | Topic | Key Project/Script | Status |
 | :--- | :--- | :--- | :--- |
 | Day 01 | Introduction & Variables | `hello_world.py` | ✅ Complete |
-| Day 02 | Built-in Functions | `variables.py` | 🏃 In Progress |
-| Day 03 | Operators | - | ⏳ Pending |
+| Day 02 | Built-in Functions | `variables.py` | ✅ Complete |
+| Day 03 | Operators | operators.py / ml_logic.py |	✅ Complete |
+| Day 04 | Strings | strings.py / text_preprocessor.py | ✅ Complete |
+| Day 05 | Lists | lists.py / ml_dataset_manager.py | ✅ Complete |
+| Day 06 | Tuples | tuples.py / model_specs.py | ✅ Complete |
+| Day 07 | Sets | set_logic.py | ✅ Complete |
+| Day 08 | Dictionaries |	model_config.py	| ✅ Complete |
 
 ## 🛠️ Skills I'm Building
 - **Core:** Data Types, Loops, Functions
