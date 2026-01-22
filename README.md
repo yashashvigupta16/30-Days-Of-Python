@@ -23,4 +23,4 @@ My objective is to build a strong foundation in Python to transition into Data A
 - **Frameworks:** (Planning to learn) Flask/Pandas
 
 ---
-*Follow my journey on www.linkedin.com/in/yashashvi-gupta-bard1
+*Follow my journey on www.linkedin.com/in/yashashvi-gupta-robotics
