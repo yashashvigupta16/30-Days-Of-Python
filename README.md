@@ -16,6 +16,7 @@ My objective is to build a strong foundation in Python to transition into Data A
 | Day 06 | Tuples | tuples.py / model_specs.py | ✅ Complete |
 | Day 07 | Sets | set_logic.py | ✅ Complete |
 | Day 08 | Dictionaries |	model_config.py	| ✅ Complete |
+| Day 09 | Conditionals	| model_decision_logic.py | ✅ Complete |
 
 ## 🛠️ Skills I'm Building
 - **Core:** Data Types, Loops, Functions
