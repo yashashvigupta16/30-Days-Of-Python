@@ -1,0 +1,12 @@
+# Day 9: Conditionals – Decision Logic for AI Deployment
+model_results = {"accuracy": 0.92, "loss": 0.05, "epochs": 100}
+
+# Defining a minimum performance benchmark
+threshold = 0.90
+
+if model_results["accuracy"] >= threshold:
+    print("🚀 Status: Model satisfies performance criteria. Proceeding to Production deployment.")
+elif model_results["accuracy"] > 0.70:
+    print("🚧 Status: Model shows potential but requires additional fine-tuning.")
+else:
+    print("❌ Status: Performance is insufficient. Retraining with updated hyperparameters recommended.")
