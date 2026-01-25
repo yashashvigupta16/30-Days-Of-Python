@@ -1,0 +1,22 @@
+# Day 10: Loops – Simulating AI Model Training Cycles
+# Loops help automate repeated processes such as training iterations.
+
+import time
+
+# 1. Simulating a Training Process (for loop)
+print("🚀 Initiating Model Training...")
+accuracies = [0.65, 0.72, 0.78, 0.85, 0.91]
+
+# In Machine Learning, one complete pass through the dataset is called an 'Epoch'
+for epoch, acc in enumerate(accuracies, 1):
+    print(f"Epoch {epoch}: Accuracy = {acc * 100}%")
+    time.sleep(0.5)  # Simulating computation time
+
+# 2. Tracking Loss Reduction (while loop)
+loss = 0.50
+print("\n📉 Reducing Model Loss...")
+while loss > 0.05:
+    print(f"Current Loss: {loss:.3f}")
+    loss -= 0.10  # Simulating the optimizer minimizing error
+
+print("\n✅ Training Finished. Model successfully optimized.")
