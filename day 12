@@ -1,0 +1,25 @@
+# Day 12: Modules – Utilizing Python’s Standard Library
+# Modules let us reuse built-in functionality to handle advanced tasks efficiently.
+
+import math
+import random
+
+# 1. Using the 'random' module to create synthetic sensor readings
+def generate_synthetic_data(num_samples):
+    data = []
+    for _ in range(num_samples):
+        # Generating a random value between 0 and 100
+        data.append(random.uniform(0, 100))
+    return data
+
+# 2. Using the 'math' module for model-related computations
+def calculate_loss_log(value):
+    # Simulating a logarithmic loss function
+    return math.log1p(value)
+
+# --- Running the Module-Based Functions ---
+samples = generate_synthetic_data(5)
+print(f"Generated Synthetic Data: {samples}")
+
+sample_loss = calculate_loss_log(samples[0])
+print(f"Log Loss for First Sample: {sample_loss:.4f}")
