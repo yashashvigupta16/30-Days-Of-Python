@@ -19,6 +19,7 @@ My objective is to build a strong foundation in Python to transition into Data A
 | Day 09 | Conditionals	| model_decision_logic.py | ✅ Complete |
 | Day 10 | Loops | model_trainer.py |	✅ Complete |
 | Day 11 | Functions | data_pipeline.py |	✅ Complete |
+| Day 12 | Modules | data_generator.py | ✅ Complete |
 
 ## 🛠️ Skills I'm Building
 - **Core:** Data Types, Loops, Functions
