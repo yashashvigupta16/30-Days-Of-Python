@@ -1,0 +1,22 @@
+# Day 13: List Comprehension – Efficient Data Filtering
+# List comprehensions offer a compact and readable way to build and modify lists.
+
+# 1. Simulating raw sensor data containing 'noise' (negative values indicate errors)
+raw_sensor_data = [22.5, -1.0, 45.3, -99.0, 30.1, 55.8, -5.0]
+
+# 2. Conventional method (multiple lines)
+# cleaned_data = []
+# for x in raw_sensor_data:
+#     if x > 0:
+#         cleaned_data.append(x)
+
+# 3. Pythonic approach: List Comprehension (single line)
+# Pattern: [expression for item in list if condition]
+cleaned_data = [val for val in raw_sensor_data if val > 0]
+
+# 4. Data transformation: Convert Celsius readings to Fahrenheit in one step
+fahrenheit_data = [(val * 9/5) + 32 for val in cleaned_data]
+
+print(f"Raw Data: {raw_sensor_data}")
+print(f"Filtered Data (Noise Removed): {cleaned_data}")
+print(f"Converted Data (Fahrenheit): {fahrenheit_data}")
