@@ -1,0 +1,23 @@
+# Day 14: Higher-Order Functions – AI Prediction Processing Pipeline
+# Leveraging map, filter, and lambda to efficiently handle model outputs.
+
+# 1. Raw prediction confidence scores (range: 0.0 to 1.0)
+predictions = [0.95, 0.42, 0.88, 0.30, 0.75, 0.98, 0.15]
+
+# 2. FILTER: Select only high-confidence predictions (≥ 0.70)
+# A lambda function defines the rule in a single line
+high_confidence = list(filter(lambda x: x >= 0.70, predictions))
+
+# 3. MAP: Convert scores into percentage strings for display
+formatted_results = list(map(lambda x: f"{x * 100:.1f}%", high_confidence))
+
+print(f"Complete Prediction Set: {predictions}")
+print(f"High-Confidence Predictions: {high_confidence}")
+print(f"Formatted for User Interface: {formatted_results}")
+
+# 4. REDUCE (Bonus): Compute the average of high-confidence scores
+from functools import reduce
+total_sum = reduce(lambda x, y: x + y, high_confidence)
+average_conf = total_sum / len(high_confidence)
+
+print(f"Average Confidence Level: {average_conf:.2f}")
