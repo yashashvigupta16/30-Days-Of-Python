@@ -21,6 +21,7 @@ My objective is to build a strong foundation in Python to transition into Data A
 | Day 11 | Functions | data_pipeline.py |	✅ Complete |
 | Day 12 | Modules | data_generator.py | ✅ Complete |
 | Day 13 | List Comprehension	| data_cleaner.py |	✅ Complete |
+| Day 14 | Higher Order Functions |	higher_order_logic.py	| ✅ Complete |
 
 ## 🛠️ Skills I'm Building
 - **Core:** Data Types, Loops, Functions
