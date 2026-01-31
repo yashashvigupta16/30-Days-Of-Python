@@ -1,0 +1,24 @@
+# Day 16: Python Datetime – Benchmarking Model Performance
+# Measuring training time and creating versioned model files using timestamps.
+
+from datetime import datetime
+import time
+
+# 1. Record the start time
+start_time = datetime.now()
+print(f"🚀 Training initiated at: {start_time.strftime('%H:%M:%S')}")
+
+# 2. Simulate training time (3-second delay)
+print("...Training running...")
+time.sleep(3)
+
+# 3. Record the end time
+end_time = datetime.now()
+duration = end_time - start_time
+
+# 4. Create a timestamp-based versioned filename
+timestamp = end_time.strftime("%Y%m%d_%H%M")
+model_filename = f"model_v2_{timestamp}.pkl"
+
+print(f"✅ Training finished. Total duration: {duration.total_seconds()} seconds")
+print(f"📦 Model stored as: {model_filename}")
