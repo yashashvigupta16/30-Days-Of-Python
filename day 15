@@ -1,0 +1,36 @@
+# Day 15: Python Type Errors – A Debugging Milestone
+# Learning to interpret tracebacks and recognize frequent ML data-related mistakes.
+
+def process_model_input(value):
+    # Intentional mistake: Attempting to add a string to a number
+    # This will raise a 'TypeError'
+    return value + " is the score"
+
+def check_list_index(data):
+    # Intentional mistake: Accessing a non-existent index
+    # This will raise an 'IndexError'
+    return data[10]
+
+# --- Practice Section ---
+print("🔍 Practicing error identification...")
+
+# 1. TypeError: Combining incompatible data types
+try:
+    process_model_input(0.95)
+except TypeError as e:
+    print(f"❌ TypeError caught: {e}. (Reason: Cannot concatenate float and string)")
+
+# 2. NameError: Referencing an undefined variable
+try:
+    print("unknown_variable")
+except NameError as e:
+    print(f"❌ NameError caught: {e}. (Reason: Variable not initialized)")
+
+# 3. ValueError: Supplying invalid input to a function
+try:
+    import math
+    math.sqrt(-1)
+except ValueError as e:
+    print(f"❌ ValueError caught: {e}. (Reason: Math domain error)")
+
+print("\n✅ Understanding errors is essential for building reliable AI systems.")
