@@ -1,0 +1,28 @@
+# Day 17: Exception Handling – Creating Robust Data Pipelines
+# Applying try, except, and finally blocks to manage unexpected input safely.
+
+def safe_divide_pixels(pixel_value):
+    try:
+        # Simulating possible issues (e.g., invalid type or zero division)
+        normalized = pixel_value / 255
+        return round(normalized, 3)
+    except ZeroDivisionError:
+        print("⚠️ Warning: Division by zero encountered. Returning 0.0")
+        return 0.0
+    except TypeError:
+        print(f"⚠️ Warning: Unsupported data type '{type(pixel_value).__name__}'. Skipping entry.")
+        return None
+    finally:
+        # Executes regardless of whether an exception occurred
+        pass
+
+# --- Running the Fault-Tolerant Pipeline ---
+raw_data = [255, 128, "corrupted_text", 0, 45]
+processed_data = []
+
+for item in raw_data:
+    result = safe_divide_pixels(item)
+    if result is not None:
+        processed_data.append(result)
+
+print(f"\n✅ Processed Data Ready for Model: {processed_data}")
