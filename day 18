@@ -1,0 +1,22 @@
+# Day 18: Regular Expressions – Cleaning Text for NLP Pipelines
+# The 're' module helps preprocess unstructured text before feeding it to AI models.
+
+import re
+
+# 1. Raw unprocessed text (similar to scraped social media content)
+raw_text = "Check out my AI project!!! Visit https://github.com/yashashvigupta16 #Python #AI @2026"
+
+# 2. CLEANING STEP: Replace URLs
+# Pattern: Match http/https links followed by non-space characters
+no_url = re.sub(r'https?://\S+', '[URL]', raw_text)
+
+# 3. CLEANING STEP: Remove numbers and special characters
+# Pattern: Retain only alphabets and spaces
+clean_text = re.sub(r'[^a-zA-Z\s]', '', no_url)
+
+# 4. EXTRACTION STEP: Capture all hashtags
+hashtags = re.findall(r'#\w+', raw_text)
+
+print(f"Original Text: {raw_text}")
+print(f"Text Prepared for NLP: {clean_text.strip()}")
+print(f"Extracted Hashtag Features: {hashtags}")
