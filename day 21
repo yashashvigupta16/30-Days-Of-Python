@@ -1,0 +1,31 @@
+# Day 21: Classes and Objects – Designing an AI Model Blueprint
+# Creating a structured template that represents a machine learning system.
+
+class SimpleAIModel:
+    def __init__(self, model_name, learning_rate):
+        # Attributes: Information stored within the object
+        self.model_name = model_name
+        self.learning_rate = learning_rate
+        self.is_trained = False
+        print(f"🤖 Model '{self.model_name}' has been initialized.")
+
+    def train(self, data_points):
+        # Method: An operation the model can carry out
+        print(f"⚙️ Training {self.model_name} with {len(data_points)} data samples...")
+        self.is_trained = True
+        print("✅ Training successfully completed.")
+
+    def predict(self, input_value):
+        if not self.is_trained:
+            return "❌ Error: Please train the model before making predictions."
+        return f"🔮 Prediction for {input_value}: High Confidence"
+
+# --- Working with the Class (Creating an Instance) ---
+# This object is a real implementation of the blueprint
+my_brain = SimpleAIModel("NeuralNet_v1", 0.001)
+
+# Executing model actions
+my_brain.train([1, 2, 3, 4, 5])
+result = my_brain.predict("Image_Data_01")
+
+print(result)
