@@ -18,10 +18,8 @@ My objective is to build a strong foundation in Python to transition into Data A
 | Day 08 | Dictionaries |	model_config.py	| ✅ Complete |
 | Day 09 | Conditionals	| model_decision_logic.py | ✅ Complete |
 | Day 10 | Loops | model_trainer.py |	✅ Complete |
-| Day 11 | Functions | data_pipeline.py |	✅ Complete |
-| Day 12 | Modules | data_generator.py | ✅ Complete |
-| Day 13 | List Comprehension	| data_cleaner.py |	✅ Complete |
-| Day 14 | Higher Order Functions |	higher_order_logic.py	| ✅ Complete |
+| Day 11-20 |	Advanced Logic & APIs	| api_fetcher.py / resilient_trainer.py |	✅ Complete |
+| Day 21 | Classes & Objects | ai_model_class.py | ✅ Complete |
 
 ## 🛠️ Skills I'm Building
 - **Core:** Data Types, Loops, Functions
