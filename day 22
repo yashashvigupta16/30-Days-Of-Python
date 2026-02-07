@@ -1,0 +1,29 @@
+# Day 22: Web Scraping – Creating Custom Datasets
+# Using BeautifulSoup to collect structured data from web pages.
+
+import requests
+from bs4 import BeautifulSoup
+
+# 1. Practice URL (A safe and publicly accessible site for scraping)
+url = 'https://archive.org/details/texts'
+
+try:
+    # 2. Request the web page
+    response = requests.get(url)
+    
+    # 3. Parse the returned HTML
+    soup = BeautifulSoup(response.content, 'html.parser')
+    
+    # 4. Data extraction: Locate all collection entries
+    # Logic: Identify elements by tag and class name
+    titles = soup.find_all('div', class_='item-ia')
+    
+    print(f"🔎 Scraping completed successfully! Total items found: {len(titles)}\n")
+    
+    for i, item in enumerate(titles[:5], 1):
+        # Extract and clean the text content
+        title_text = item.get_text().strip()
+        print(f"{i}. {title_text}")
+
+except Exception as e:
+    print(f"❌ An error occurred during scraping: {e}")
