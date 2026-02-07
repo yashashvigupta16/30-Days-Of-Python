@@ -1,0 +1,27 @@
+# Day 24: Statistics – Interpreting Data Distribution
+# Using descriptive statistics to evaluate AI model performance trends.
+
+import statistics
+
+# 1. Sample Dataset: Accuracy scores from multiple model iterations
+accuracy_scores = [0.85, 0.88, 0.92, 0.78, 0.85, 0.90, 0.95, 0.82, 0.85, 0.89]
+
+# 2. Measuring Central Tendency
+mean_acc = statistics.mean(accuracy_scores)     # Overall average performance
+median_acc = statistics.median(accuracy_scores) # Middle value (robust to outliers)
+mode_acc = statistics.mode(accuracy_scores)     # Most frequently occurring score
+
+# 3. Measuring Variability (Performance consistency)
+st_dev = statistics.stdev(accuracy_scores)
+
+print("📊 AI Model Performance Summary")
+print(f"Average Accuracy (Mean): {mean_acc:.2f}")
+print(f"Median Accuracy: {median_acc:.2f}")
+print(f"Most Common Score (Mode): {mode_acc:.2f}")
+print(f"Standard Deviation: {st_dev:.4f}")
+
+# 4. Stability Check: Assessing training consistency
+if st_dev < 0.05:
+    print("✅ Result: Model training appears stable.")
+else:
+    print("⚠️ Warning: Noticeable variance detected in training performance.")
