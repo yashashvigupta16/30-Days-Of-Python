@@ -10,19 +10,21 @@ My objective is to build a strong foundation in Python to transition into Data A
 | :--- | :--- | :--- | :--- |
 | Day 01 | Introduction & Variables | `hello_world.py` | ✅ Complete |
 | Day 02 | Built-in Functions | `variables.py` | ✅ Complete |
-| Day 03 | Operators | operators.py / ml_logic.py |	✅ Complete |
-| Day 04 | Strings | strings.py / text_preprocessor.py | ✅ Complete |
-| Day 05 | Lists | lists.py / ml_dataset_manager.py | ✅ Complete |
-| Day 06 | Tuples | tuples.py / model_specs.py | ✅ Complete |
-| Day 07 | Sets | set_logic.py | ✅ Complete |
-| Day 08 | Dictionaries |	model_config.py	| ✅ Complete |
-| Day 09 | Conditionals	| model_decision_logic.py | ✅ Complete |
-| Day 10 | Loops | model_trainer.py |	✅ Complete |
-| Day 11-20 |	Advanced Logic & APIs	| api_fetcher.py / resilient_trainer.py |	✅ Complete |
-| Day 21 | Classes & Objects | ai_model_class.py | ✅ Complete |
+| Day 03 | Operators | `operators.py / ml_logic.py` |	✅ Complete |
+| Day 04 | Strings | `strings.py / text_preprocessor.py` | ✅ Complete |
+| Day 05 | Lists | `lists.py / ml_dataset_manager.py` | ✅ Complete |
+| Day 06 | Tuples | `tuples.py / model_specs.py` | ✅ Complete |
+| Day 07 | Sets | `set_logic.py` | ✅ Complete |
+| Day 08 | Dictionaries |	`model_config.py`	| ✅ Complete |
+| Day 09 | Conditionals	| `model_decision_logic.py` | ✅ Complete |
+| Day 10 | Loops | `model_trainer.py` |	✅ Complete |
+| Day 11-20 |	Advanced Logic & APIs	| `api_fetcher.py / resilient_trainer.py` |	✅ Complete |
+| Day 21 | Classes & Objects | `ai_model_class.py` | ✅ Complete |
 | Day 22 | Web Scraping | `web_scraper.py` | ✅ Complete |
 | Day 23 | Virtual Environments | `requirements.txt` / `.gitignore` | ✅ Complete |
 | Day 24 | Statistics | `statistics_analyzer.py` | ✅ Complete |
+| Day 25 | Pandas | `data_explorer.py` | ✅ Complete |
+
 ## 🛠️ Skills I'm Building
 - **Core:** Data Types, Loops, Functions
 - **Advanced:** File Handling, Regular Expressions, Web Scraping
