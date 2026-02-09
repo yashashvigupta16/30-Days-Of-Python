@@ -1,0 +1,31 @@
+# Day 25: Pandas – The Industry Standard for Data Analysis
+# Exploring the Eventopia dataset using DataFrames.
+
+import pandas as pd
+
+# 1. Creating a sample dataset (Simulating Eventopia records)
+data = {
+    'Event_Name': ['Hackathon', 'AstroNight', 'Fintech Summit', 'Code-v-1.0', 'Stargazing'],
+    'Department': ['CSE', 'AstroClub', 'Finance', 'CSE', 'AstroClub'],
+    'Attendees': [120, 45, 80, 200, 30],
+    'Duration_Hrs': [24, 3, 5, 12, 2]
+}
+
+# 2. Converting the data into a DataFrame
+df = pd.DataFrame(data)
+
+# 3. ANALYSIS: Generating a quick statistical overview
+print("📊 Dataset Snapshot:")
+print(df.describe())  # Summary statistics for numeric columns
+
+# 4. FILTERING: Display only events organized by CSE
+cse_events = df[df['Department'] == 'CSE']
+
+# 5. AGGREGATION: Calculating total attendees per department
+total_by_dept = df.groupby('Department')['Attendees'].sum()
+
+print("\n🚀 Events Organized by CSE:")
+print(cse_events)
+
+print("\n📈 Department-wise Total Participation:")
+print(total_by_dept)
