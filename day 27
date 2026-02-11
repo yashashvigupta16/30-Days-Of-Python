@@ -1,0 +1,30 @@
+from flask import Flask, jsonify
+
+app = Flask(__name__)
+
+# Simulated Data Source (Inspired by previous Pandas/ML datasets)
+events = [
+    {"id": 1, "name": "Astro Quiz", "dept": "AstroClub"},
+    {"id": 2, "name": "Python Hackathon", "dept": "CSE"},
+    {"id": 3, "name": "Stargazing", "dept": "AstroClub"}
+]
+
+@app.route('/')
+def home():
+    return "<h1>Eventopia ML Dashboard</h1><p>Visit /api/events to access structured event data.</p>"
+
+# API Endpoint – Enables structured data exchange
+
+@app.route('/api/events')
+def get_events():
+    return jsonify(events)
+
+# Dynamic Endpoint: Retrieve events by department
+@app.route('/api/events/<department>')
+def filter_events(department):
+    filtered = [e for e in events if e['dept'].lower() == department.lower()]
+    return jsonify(filtered)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
