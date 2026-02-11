@@ -1,0 +1,27 @@
+# Day 26: Flask Basics – Launching Eventopia
+# Building a simple web server to host our university event platform.
+
+from flask import Flask
+
+# 1. Create the Flask application instance
+app = Flask(__name__)
+
+# 2. Define the main route (Homepage URL)
+@app.route('/')
+def home():
+    # Content displayed in the user's browser
+    return """
+    <h1>Welcome to Eventopia 🚀</h1>
+    <p>Your one-stop destination for all GLA University events!</p>
+    <hr>
+    <h3>System Overview:</h3>
+    <ul>
+        <li>Status: Online</li>
+        <li>Progress: Day 26/30</li>
+    </ul>
+    """
+
+# 3. Start the development server
+if __name__ == '__main__':
+    # debug=True enables automatic reload on code changes
+    app.run(debug=True)
