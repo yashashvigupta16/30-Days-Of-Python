@@ -1,11 +1,12 @@
-# 30 Days of Python Challenge 🐍
+# 30 Days of Python Challenge 🐍 — COMPLETED ✅
 
-I am participating in the [30-Days-Of-Python](https://github.com/Asabeneh/30-Days-Of-Python) challenge by Asabeneh. This repository serves as a diary of my progress, code snippets, and projects as I master Python from the ground up.
+I have successfully completed the [30-Days-Of-Python](https://github.com/Asabeneh/30-Days-Of-Python) challenge. This repository represents my journey from core Python fundamentals to building Full-Stack AI and Data Engineering systems.**
 
-## 🚀 My Goal
-My objective is to build a strong foundation in Python to transition into Data Analysis.
+## 🚀 Capstone Project: Editeur — The Companion Magazine
+A community-driven digital magazine platform designed for university students to explore, create, and share impactful content. It features a **Flask** backend for content management and user authentication, integrated with a **Pandas** analytical engine to track reader engagement, analyze trends, and provide data-driven content recommendations in real time.
 
-## 📅 Progress Tracker
+
+## 📅 Final Progress Tracker
 | Day | Topic | Key Project/Script | Status |
 | :--- | :--- | :--- | :--- |
 | Day 01 | Introduction & Variables | `hello_world.py` | ✅ Complete |
@@ -24,11 +25,17 @@ My objective is to build a strong foundation in Python to transition into Data A
 | Day 23 | Virtual Environments | `requirements.txt` / `.gitignore` | ✅ Complete |
 | Day 24 | Statistics | `statistics_analyzer.py` | ✅ Complete |
 | Day 25 | Pandas | `data_explorer.py` | ✅ Complete |
+| Day 26 | Python Web (Flask) | `app.py` | ✅ Complete |
+| Day 27 | Flask Routing | `event_portal.py` | ✅ Complete |
+| Day 28 | API Endpoints | `search_api.py` | ✅ Complete |
+| Day 29 | ML & Web Integration | `integrated_app.py` | ✅ Complete |
+| Day 30 | Final Project Review | `final_reflections.py` | ✅ Complete |
 
-## 🛠️ Skills I'm Building
-- **Core:** Data Types, Loops, Functions
-- **Advanced:** File Handling, Regular Expressions, Web Scraping
-- **Frameworks:** (Planning to learn) Flask/Pandas
 
+## 🛠️ Mastered Skills
+- **Data Engineering:** Pandas DataFrames, Descriptive Statistics, JSON Serialization, Web Scraping (BeautifulSoup).
+- **Backend & API:** RESTful API Development (Flask), Dynamic Routing, Query Parameter Handling, Environment Isolation (venv).
+- **AI Architecture:** **Model-to-Web Integration**, Automated Recommendations, System Scalability, Data Retrieval Systems.
+- **Software Excellence:** OOP (Classes/Objects), Exception Handling, Project Reproducibility.
 ---
 *Follow my journey on www.linkedin.com/in/yashashvi-gupta-robotics
