@@ -1,0 +1,47 @@
+# Day 29: System Integration – Pandas meets Flask (Éditeur Edition)
+# Using a professional data engine to power The Companion Magazine Web API.
+
+import pandas as pd
+from flask import Flask, request, jsonify
+
+app = Flask(__name__)
+
+# 1. Load Data into Pandas (The Editorial Intelligence Engine)
+# In production, this could be: pd.read_csv('companion_issues.csv')
+raw_data = {
+    'name': [
+        'The Companion – AI Special Edition',
+        'Women in Tech Feature',
+        'Campus Innovators Spotlight',
+        'Editorial Board Insights',
+        'Future of Robotics Cover Story'
+    ],
+    'category': [
+        'Magazine Issue',
+        'Feature Article',
+        'Interview',
+        'Editorial',
+        'Cover Story'
+    ],
+    'engagement_score': [88, 92, 76, 64, 95]
+}
+df = pd.DataFrame(raw_data)
+
+@app.route('/api/recommend', methods=['GET'])
+def recommend_content():
+    # 2. Logic: Use Pandas to identify high-engagement content
+    # Only serve content with engagement_score above a threshold
+    threshold = int(request.args.get('min_score', 80))
+    
+    # Pandas filtering for efficient data processing
+    recommendations = df[df['engagement_score'] >= threshold]
+    
+    # Convert DataFrame output into JSON format for API response
+    return jsonify({
+        "status": "success",
+        "count": len(recommendations),
+        "data": recommendations.to_dict(orient='records')
+    })
+
+if __name__ == '__main__':
+    app.run(debug=True)
