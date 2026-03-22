@@ -19,4 +19,4 @@ while loss > 0.05:
     print(f"Current Loss: {loss:.3f}")
     loss -= 0.10  # Simulating the optimizer minimizing error
 
-print("\n✅ Training Finished. Model successfully optimized.")
+print("\n✅ Training Finished. Model successfully optimized.")#hello world
